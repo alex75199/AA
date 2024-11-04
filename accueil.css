@@ -1,0 +1,71 @@
+body {
+    background-color: #eeeeee;
+}
+
+.container {
+    box-sizing: border-box;
+    background-color: #ffffff;
+    width: 600px;
+    margin: auto;
+    padding: 16px;
+}
+
+table, th, td {
+    border: 2px solid black;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td, th {
+    padding: 12px;
+}
+
+span {
+    font-weight: bold;
+    color: blue;
+    font-style: italic ;
+}
+
+.radio-couple {
+    display: flex;
+    align-items: center;
+}
+
+form p {
+    margin: 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.gender {
+    display: flex;
+    margin-bottom: 24px;
+}
+
+input[type="text"], input[type="email"] {
+    width: 250px;
+}
+
+select {
+    width: 90px;
+    margin-bottom: 16px;
+}
+
+textarea {
+    width: 300px;
+    height: 200px;
+}
+
+.check {
+    display: flex;
+}
+
+input[type="submit"] {
+    width: 160px;
+    margin-top: 16px;
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil</title>
+    <link rel="stylesheet" href="./accueil.css">
+</head>
+
+<body>
+    <!-- Il faudra faire les 2 pages (accueil et acheter) et les relier  -->
+
+    <!-- Pour les balises que nous n'avons pas vu :
+
+    - Pour les boutons de type radio ce sera des inputs de type radio
+    - Pour le menu déroulant ce sera la balise select qui elle meme contient des balises de type option
+    - Pour l'input de texte ce sera la balise textarea -->
+
+    <div class="container">
+
+        <!-- header>h1+hr+ul>((li>a)*2)+hr -->
+        <header>
+            <h1>LEGO Webstore</h1>
+            <hr>
+            <ul>
+                <li><a href="accueilco.html">Accueil</a></li>
+                <li><a href="#">Acheter</a></li>
+            </ul>
+            <hr>
+        </header>
+
+        <main>
+
+            <!-- h2+p+h3+form>p+(input+p)*2+(label+input)*3+h3+p+(select>option*4)+label+textarea+h3+input+p+input -->
+            <h2>Acheter des LEGO</h2>
+            <p>Remplissez le formulaire ci-dessous pour commander des <span>LEGO !</span></p>
+            
+            <h3>Informations personnelles</h3>
+            
+            <form>
+
+                <p>Civilité :</p>
+
+                <div class="gender">
+                    <div class="radio-couple">
+                        <input value="mister" name="gender" type="radio">
+                        <p>Mr</p>
+                    </div>
+
+                    <div class="radio-couple">
+                        <input value="miss" name="gender" type="radio">
+                        <p>Mme</p>
+                    </div>
+                </div>
+
+                <label for="firstname">Prénom</label>
+                <input name="firstname" placeholder="Votre prénom ..." type="text">
+                <label for="lastname">Nom</label>
+                <input name="lastname" placeholder="Votre nom ..." type="text">
+                <label for="email">Email</label>
+                <input name="email" placeholder="Votre email ..." type="email">
+                
+                <h3>Informations de livraison</h3>
+
+                <p>Quantité commandée :</p>
+                <select name="boxes" id="select-boxes">
+                    <option value="one">1 boite</option>
+                    <option value="two">2 boites</option>
+                    <option value="three">3 boites</option>
+                    <option value="four">4 boites</option>
+                </select>
+                
+                <label for="adress">Adresse de livraison</label>
+                <textarea name="adress"></textarea>
+                
+                <h3>Confirmation</h3>
+
+                <div class="check">
+                    <input name="confirm" type="checkbox">
+                    <p>J'ai relu ma commande et certifie que ces informations sont correctes.</p>
+                </div>
+
+                <input value="confitrmer la commande" name="submit" type="submit">
+            </form>
+
+        </main>
+
+        <hr>
+        <footer>
+            <a href="#top">Retour en haut de page</a>
+            <p>TP1 : Découverte de HTML et CSS</p>
+            <p>L2 Développement Web - 2018</p>
+        </footer>
+
+    </div>
+
+    </body>
+    </html>
